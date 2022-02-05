@@ -1,1 +1,0 @@
-# edu_python_base_pkg
