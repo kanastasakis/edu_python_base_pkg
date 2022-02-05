@@ -30,3 +30,6 @@ jobs:
       - name: Test with 
         run: |
           tox -e py
+      - name: Build package
+        run: |
+          tox -e build
