@@ -1,6 +1,8 @@
 name: Python package
 
-on: [push]
+on: 
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -33,3 +35,4 @@ jobs:
       - name: Build package
         run: |
           tox -e build
+          echo "Deploy to artifact repository."
